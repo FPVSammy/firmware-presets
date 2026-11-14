@@ -3789,6 +3789,22 @@
       "priority": 10000
     },
     {
+      "fullPath": "presets/2026.6/rates/LongRange.txt",
+      "hash": "5a6868904d12bc2765c0a31897c2d5598b1813c677d45d02939710c2a152eaf1",
+      "title": "Long Range Rate Profiles",
+      "firmware_version": [
+        "2026.6"
+      ],
+      "category": "RATES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "rates",
+        "long range"
+      ],
+      "author": "FPVSammy",
+      "priority": 10000
+    },
+    {
       "fullPath": "presets/2026.6/rc_link/crsf/crsf_50hz.txt",
       "hash": "10e8c911fa866924ab7d7e0f3a5c32e9611732c3221268b99e8936d78e6167c9",
       "title": "CRSF - Fixed 50Hz",
