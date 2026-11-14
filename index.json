@@ -151,8 +151,11 @@
       "880_32",
       "actual",
       "battery profiles",
+      "display",
+      "freestyle",
       "gps",
       "hd",
+      "layout",
       "liion",
       "lipo",
       "long range",
@@ -163,6 +166,25 @@
     ]
   },
   "presets": [
+    {
+      "fullPath": "presets/2026.6/osd/Walksnail_Freestyle_OSD.txt",
+      "hash": "4047348375e0d69c9f7705a569c9c8f4b408ba60a48dc643e5f1be4b9bf15675",
+      "title": "Freestyle Digital Walksnail OSD Layout",
+      "firmware_version": [
+        "2026.6"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "osd",
+        "layout",
+        "freestyle",
+        "walksnail",
+        "display"
+      ],
+      "author": "FPVSammy",
+      "priority": 0
+    },
     {
       "fullPath": "presets/2026.6/osd/Walksnail_LR_OSD.txt",
       "hash": "e1e858fe33481957ade116ca7134faca35576d19bd4d0d3c375c79549b75246e",
