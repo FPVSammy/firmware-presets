@@ -1,0 +1,51 @@
+#$ TITLE: Long Range Battery Profiles
+#$ FIRMWARE_VERSION: 2026.6
+#$ CATEGORY: OTHER
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: battery profiles, liion, lipo, voltage alerts, long range
+#$ AUTHOR: FPVSammy
+#$ DESCRIPTION: Configures custom battery profiles (LiIon, LiIonLow, LiPo) extracted from 7inch_analog_master_2.txt.
+
+# ==========================================
+# BATTERY PROFILE 0: LiIon
+# ==========================================
+battery_profile 0
+set battery_profile_name = LiIon
+set vbat_max_cell_voltage = 425
+set vbat_min_cell_voltage = 300
+set vbat_warning_cell_voltage = 325
+set force_battery_cell_count = 6
+
+# ==========================================
+# BATTERY PROFILE 1: LiIonLow
+# ==========================================
+battery_profile 1
+set battery_profile_name = LiIonLow
+set vbat_max_cell_voltage = 425
+set vbat_min_cell_voltage = 275
+set vbat_warning_cell_voltage = 300
+
+# ==========================================
+# BATTERY PROFILE 2: LiPo
+# ==========================================
+battery_profile 2
+set battery_profile_name = LiPo
+
+# ==========================================
+# DEFAULT ACTIVE BATTERY PROFILE
+# ==========================================
+#$ OPTION_GROUP BEGIN: Default Active Battery Profile
+
+    #$ OPTION BEGIN (CHECKED): Profile 1 - LiIon
+        battery_profile 0
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Profile 2 - LiIonLow (Default from backup)
+        battery_profile 1
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Profile 3 - LiPo
+        battery_profile 2
+    #$ OPTION END
+
+#$ OPTION_GROUP END

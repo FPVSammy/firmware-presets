@@ -281,19 +281,19 @@ set yaw_srate = 68
 battery_profile 0
 
 # battery_profile 0
-set battery_profile_name = LiIonLow
+set battery_profile_name = LiIon
 set vbat_max_cell_voltage = 425
-set vbat_min_cell_voltage = 275
-set vbat_warning_cell_voltage = 300
+set vbat_min_cell_voltage = 300
+set vbat_warning_cell_voltage = 325
 set force_battery_cell_count = 6
 
 battery_profile 1
 
 # battery_profile 1
-set battery_profile_name = LiIonHi
+set battery_profile_name = LiIonLow
 set vbat_max_cell_voltage = 425
-set vbat_min_cell_voltage = 300
-set vbat_warning_cell_voltage = 325
+set vbat_min_cell_voltage = 275
+set vbat_warning_cell_voltage = 300
 
 battery_profile 2
 
@@ -304,7 +304,7 @@ set battery_profile_name = LiPo
 rateprofile 3
 
 # restore original battery_profile selection
-battery_profile 0
+battery_profile 1
 
 # save configuration
 save

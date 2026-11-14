@@ -330,6 +330,7 @@
       "bardwell",
       "basher",
       "basic",
+      "battery profiles",
       "beginner",
       "betaflight",
       "betafpv",
@@ -469,8 +470,10 @@
       "LeadFingers",
       "League",
       "leds",
+      "liion",
       "limon",
       "link",
+      "lipo",
       "Llama",
       "log",
       "logging",
@@ -528,7 +531,6 @@
       "PIDtoolbox",
       "pro32",
       "profile",
-      "profile 3",
       "Protos",
       "Pure Race",
       "quaddiction",
@@ -650,12 +652,13 @@
       "Viper Racing",
       "vista",
       "Voltage",
+      "voltage alerts",
       "vt5804",
       "vt5804bat",
       "vtx",
       "vtx table",
       "vtxtable",
-      "Walksnail",
+      "walksnail",
       "whoop",
       "whoop lite",
       "whooptopia",
@@ -3679,8 +3682,8 @@
     },
     {
       "fullPath": "presets/2026.6/osd/Walksnail_LR_OSD.txt",
-      "hash": "0bafbcf0f6c1c5952cb967c7f63428598d3eb6349e8fd4dbfca608dedc577e8f",
-      "title": "4\" Long Range Digital OSD Layout",
+      "hash": "e1e858fe33481957ade116ca7134faca35576d19bd4d0d3c375c79549b75246e",
+      "title": "Long Range Digital Walksnail OSD Layout",
       "firmware_version": [
         "2026.6"
       ],
@@ -3691,7 +3694,7 @@
         "long range",
         "gps",
         "hd",
-        "profile 3"
+        "walksnail"
       ],
       "author": "FPVSammy",
       "priority": 0
@@ -3713,6 +3716,25 @@
         "sugarK"
       ],
       "author": "sugarK",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2026.6/other/LongRange_battery_profiles.txt",
+      "hash": "87adcfb0431836230d64a7bd28f4af2c16598e0f8676683fe275264175ab7c40",
+      "title": "Long Range Battery Profiles",
+      "firmware_version": [
+        "2026.6"
+      ],
+      "category": "OTHER",
+      "status": "COMMUNITY",
+      "keywords": [
+        "battery profiles",
+        "liion",
+        "lipo",
+        "voltage alerts",
+        "long range"
+      ],
+      "author": "FPVSammy",
       "priority": 0
     },
     {
