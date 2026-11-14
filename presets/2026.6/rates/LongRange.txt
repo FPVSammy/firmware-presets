@@ -71,7 +71,7 @@ set yaw_srate = 68
 # ==========================================
 #$ OPTION_GROUP BEGIN: Default Active Rate Profile
 
-    #$ OPTION BEGIN (UNCHECKED): Profile 1 - LongRang
+    #$ OPTION BEGIN (CHECKED): Profile 1 - LongRang
         rateprofile 0
     #$ OPTION END
 
@@ -83,7 +83,7 @@ set yaw_srate = 68
         rateprofile 2
     #$ OPTION END
 
-    #$ OPTION BEGIN (CHECKED): Profile 4 - Callisto (Default from backup)
+    #$ OPTION BEGIN (UNCHECKED): Profile 4 - Callisto
         rateprofile 3
     #$ OPTION END
 
