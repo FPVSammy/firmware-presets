@@ -184,6 +184,7 @@
       "FPV_Cam",
       "fpvdb",
       "FPVian",
+      "FPVSammy",
       "Funkolius",
       "Garban",
       "Grey pang",
@@ -527,6 +528,7 @@
       "PIDtoolbox",
       "pro32",
       "profile",
+      "profile 3",
       "Protos",
       "Pure Race",
       "quaddiction",
@@ -3673,6 +3675,25 @@
         "racing"
       ],
       "author": "sugarK",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2026.6/osd/Walksnail_LR_OSD.txt",
+      "hash": "0bafbcf0f6c1c5952cb967c7f63428598d3eb6349e8fd4dbfca608dedc577e8f",
+      "title": "4\" Long Range Digital OSD Layout",
+      "firmware_version": [
+        "2026.6"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "osd",
+        "long range",
+        "gps",
+        "hd",
+        "profile 3"
+      ],
+      "author": "FPVSammy",
       "priority": 0
     },
     {
