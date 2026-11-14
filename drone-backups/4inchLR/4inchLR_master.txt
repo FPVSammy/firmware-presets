@@ -91,6 +91,7 @@ set osd_profile = 3
 set rate_6pos_switch = ON
 set craft_name = 4"LongRange
 set pilot_name = FPVSammy
+set ap_hover_throttle = 1280
 
 profile 0
 
