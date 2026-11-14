@@ -1,8 +1,8 @@
-#$ TITLE: 4" Long Range Digital OSD Layout
+#$ TITLE: Long Range Digital Walksnail OSD Layout
 #$ FIRMWARE_VERSION: 2026.6
 #$ CATEGORY: OSD
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: osd, long range, gps, hd, profile 3
+#$ KEYWORDS: osd, long range, gps, hd, walksnail
 #$ AUTHOR: FPVSammy
 #$ DESCRIPTION: Extracts the custom Long Range OSD layout (Profile 3), GPS telemetry elements, and link quality alarms from 4inchLR_master.txt.
 
