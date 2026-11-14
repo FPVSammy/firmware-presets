@@ -1,0 +1,64 @@
+#$ TITLE: 4" Long Range Digital OSD Layout
+#$ FIRMWARE_VERSION: 2026.6
+#$ CATEGORY: OSD
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: osd, long range, gps, hd, profile 3
+#$ AUTHOR: FPVSammy
+#$ DESCRIPTION: Extracts the custom Long Range OSD layout (Profile 3), GPS telemetry elements, and link quality alarms from 4inchLR_master.txt.
+
+# ==========================================
+# ENABLE OSD FEATURE
+# ==========================================
+feature OSD
+
+# ==========================================
+# OSD ALARMS & ACTIVE PROFILE
+# ==========================================
+set osd_rssi_alarm = 0
+set osd_link_quality_alarm = 75
+set osd_rssi_dbm_alarm = -106
+set osd_cap_alarm = 0
+set osd_alt_alarm = 0
+set osd_profile = 3
+
+# ==========================================
+# ELEMENT POSITIONS (Layout)
+# ==========================================
+set osd_rssi_pos = 12857
+set osd_link_quality_pos = 14870
+set osd_link_tx_power_pos = 14879
+set osd_rssi_dbm_pos = 14863
+set osd_rsnr_pos = 12851
+set osd_tim_1_pos = 563
+set osd_tim_2_pos = 14885
+set osd_flymode_pos = 14498
+set osd_throttle_pos = 15650
+set osd_motor_diag_pos = 9549
+set osd_gps_speed_pos = 15682
+set osd_gps_lon_pos = 14370
+set osd_gps_lat_pos = 14402
+set osd_gps_sats_pos = 14399
+set osd_home_dir_pos = 14426
+set osd_home_dist_pos = 14466
+set osd_flight_dist_pos = 14434
+set osd_compass_bar_pos = 14390
+set osd_altitude_pos = 14665
+set osd_warnings_pos = 14836
+set osd_avg_cell_voltage_pos = 14853
+set osd_nheading_pos = 14386
+set osd_nvario_pos = 14633
+set osd_core_temp_pos = 9453
+set osd_rate_profile_name_pos = 9517
+set osd_pid_profile_name_pos = 9485
+set osd_battery_profile_name_pos = 14530
+
+# ==========================================
+# OPTIONAL IDENTITY SETTINGS
+# ==========================================
+#$ OPTION BEGIN (CHECKED): Set Pilot Name (FPVSammy)
+    set pilot_name = FPVSammy
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Set Craft Name (4"LongRange)
+    set craft_name = 4"LongRange
+#$ OPTION END
