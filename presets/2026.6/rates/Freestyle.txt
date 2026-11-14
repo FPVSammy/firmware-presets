@@ -1,0 +1,90 @@
+#$ TITLE: Freestyle Rate Profiles
+#$ FIRMWARE_VERSION: 2026.6
+#$ CATEGORY: RATES
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: rates, actual, 680_32, 880_32, 1080_32, 1000_70
+#$ AUTHOR: FPVSammy
+#$ DESCRIPTION: Configures 4 custom rate profiles (680_32, 880_32, 1080_32, 1000_70)
+
+# ==========================================
+# RATE PROFILE 0: 680_32
+# ==========================================
+rateprofile 0
+set rateprofile_name = 680_32
+set roll_rc_rate = 32
+set pitch_rc_rate = 32
+set yaw_rc_rate = 32
+set roll_expo = 32
+set pitch_expo = 32
+set yaw_expo = 32
+set roll_srate = 68
+set pitch_srate = 68
+set yaw_srate = 68
+
+# ==========================================
+# RATE PROFILE 1: 880_32
+# ==========================================
+rateprofile 1
+set rateprofile_name = 880_32
+set roll_rc_rate = 32
+set pitch_rc_rate = 32
+set yaw_rc_rate = 32
+set roll_expo = 60
+set pitch_expo = 60
+set yaw_expo = 32
+set roll_srate = 88
+set pitch_srate = 88
+set yaw_srate = 68
+
+# ==========================================
+# RATE PROFILE 2: 1080_32
+# ==========================================
+rateprofile 2
+set rateprofile_name = 1080_32
+set roll_rc_rate = 32
+set pitch_rc_rate = 32
+set yaw_rc_rate = 32
+set roll_expo = 70
+set pitch_expo = 70
+set yaw_expo = 32
+set roll_srate = 108
+set pitch_srate = 108
+set yaw_srate = 68
+
+# ==========================================
+# RATE PROFILE 3: 1000_70
+# ==========================================
+rateprofile 3
+set rateprofile_name = 1000_70
+set roll_rc_rate = 1
+set pitch_rc_rate = 1
+set yaw_rc_rate = 70
+set roll_expo = 70
+set pitch_expo = 70
+set yaw_expo = 50
+set roll_srate = 100
+set pitch_srate = 100
+set yaw_srate = 100
+
+# ==========================================
+# DEFAULT ACTIVE RATE PROFILE
+# ==========================================
+#$ OPTION_GROUP BEGIN: Default Active Rate Profile
+
+    #$ OPTION BEGIN (CHECKED): Profile 1 - 680_32
+        rateprofile 0
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Profile 2 - 880_32
+        rateprofile 1
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Profile 3 - 1080_32
+        rateprofile 2
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Profile 4 - 1000_70 (Default from backup)
+        rateprofile 3
+    #$ OPTION END
+
+#$ OPTION_GROUP END

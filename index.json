@@ -145,6 +145,11 @@
       "FPVSammy"
     ],
     "keywords": [
+      "1000_70",
+      "1080_32",
+      "680_32",
+      "880_32",
+      "actual",
       "battery profiles",
       "gps",
       "hd",
@@ -195,6 +200,26 @@
       ],
       "author": "FPVSammy",
       "priority": 0
+    },
+    {
+      "fullPath": "presets/2026.6/rates/Freestyle.txt",
+      "hash": "31725dcfa8923d7403c2a53addbd3e485b91f66074df6e248787c778cefe09e6",
+      "title": "Freestyle Rate Profiles",
+      "firmware_version": [
+        "2026.6"
+      ],
+      "category": "RATES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "rates",
+        "actual",
+        "680_32",
+        "880_32",
+        "1080_32",
+        "1000_70"
+      ],
+      "author": "FPVSammy",
+      "priority": 10000
     },
     {
       "fullPath": "presets/2026.6/rates/LongRange.txt",
