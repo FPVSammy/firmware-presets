@@ -302,6 +302,22 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/2026.6/rates/Freestyle.txt",
+      "hash": "94a50d07fa2efc5029aec934ab4527b51af10a00557dedf96e459791ac8eeb07",
+      "title": "Freestyle Rate Profiles",
+      "firmware_version": [
+        "2026.6"
+      ],
+      "category": "RATES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "rates",
+        "long range"
+      ],
+      "author": "FPVSammy",
+      "priority": 10000
+    },
+    {
       "fullPath": "presets/2026.6/rates/LongRange.txt",
       "hash": "88d9cb2b9eabc654d294d6d9caced1aaec1a37653eb0f642b44702f813cc7627",
       "title": "Long Range Rate Profiles",
