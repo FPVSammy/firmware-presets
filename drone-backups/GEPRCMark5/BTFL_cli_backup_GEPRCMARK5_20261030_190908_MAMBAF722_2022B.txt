@@ -1,0 +1,287 @@
+
+# version
+# Betaflight / STM32F722 (F722) 2026.6.2 Oct 20 2026 / 14:56:42 (e0b7bb01b) MSP API: 1.48
+# config rev: 3a406c5
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name MAMBAF722_2022B
+manufacturer_id DIAT
+mcu_id 0047003b3431510837393330
+signature 
+
+# name: GEPRCMARK5
+
+# feature
+feature GPS
+feature TELEMETRY
+feature OSD
+
+# serial
+serial UART1 64 115200 57600 0 115200
+serial UART3 131073 115200 57600 0 115200
+serial UART4 1 115200 57600 0 115200
+serial UART5 2 115200 115200 0 115200
+
+# beeper
+beeper -GYRO_CALIBRATED
+beeper -DISARMING
+beeper -ARMING
+beeper -ARMING_GPS_FIX
+beeper -BAT_CRIT_LOW
+beeper -BAT_LOW
+beeper -GPS_STATUS
+beeper -ACC_CALIBRATION
+beeper -ACC_CALIBRATION_FAIL
+beeper -READY_BEEP
+beeper -DISARM_REPEAT
+beeper -ARMED
+beeper -SYSTEM_INIT
+beeper -BLACKBOX_ERASE
+beeper -CAM_CONNECTION_OPEN
+beeper -CAM_CONNECTION_CLOSE
+
+# aux
+aux 0 0 5 900 1200 0 0
+aux 1 1 3 1300 1700 0 0
+aux 2 2 3 900 1200 0 0
+aux 3 13 7 1800 2100 0 0
+aux 4 13 0 900 1200 0 0
+aux 5 35 2 900 1800 0 0
+
+# adjrange
+adjrange 0 0 6 900 2100 12 6 0 0
+adjrange 1 0 4 900 2100 29 4 0 0
+
+# master
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 575
+set dyn_notch_count = 1
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 875
+set acc_calibration = -39,-26,-57,1
+set align_mag = CUSTOM
+set mag_align_roll = -1800
+set mag_align_pitch = 270
+set mag_calibration = -125,-674,277
+set min_check = 1005
+set rc_smoothing_auto_factor = 120
+set blackbox_sample_rate = 1/2
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT300
+set yaw_motors_reversed = ON
+set small_angle = 180
+set mag_declination = 37
+set gps_sbas_mode = EGNOS
+set gps_ublox_use_galileo = ON
+set gps_set_home_point_once = ON
+set deadband = 3
+set pid_process_denom = 2
+set simplified_gyro_filter_multiplier = 115
+set report_cell_voltage = ON
+set osd_vbat_pos = 384
+set osd_rssi_pos = 32
+set osd_link_quality_pos = 12817
+set osd_link_tx_power_pos = 12830
+set osd_rssi_dbm_pos = 12824
+set osd_tim_1_pos = 406
+set osd_tim_2_pos = 14907
+set osd_flymode_pos = 8652
+set osd_throttle_pos = 8684
+set osd_crosshairs_pos = 12697
+set osd_ah_sbar_pos = 237
+set osd_ah_pos = 206
+set osd_current_pos = 384
+set osd_mah_drawn_pos = 8747
+set osd_motor_diag_pos = 8716
+set osd_gps_speed_pos = 310
+set osd_gps_sats_pos = 314
+set osd_altitude_pos = 24940
+set osd_warnings_pos = 14836
+set osd_avg_cell_voltage_pos = 14899
+set osd_pit_ang_pos = 228
+set osd_rol_ang_pos = 260
+set osd_battery_usage_pos = 384
+set osd_rate_profile_name_pos = 8620
+set osd_pid_profile_name_pos = 8588
+set rate_6pos_switch = ON
+set rpm_filter_q = 650
+set craft_name = GEPRCMARK5
+set pilot_name = FPVSammy
+
+profile 0
+
+# profile 0
+set dterm_lpf1_dyn_min_hz = 78
+set dterm_lpf1_dyn_max_hz = 157
+set dterm_lpf2_static_hz = 157
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
+set p_pitch = 56
+set i_pitch = 50
+set d_pitch = 62
+set f_pitch = 179
+set p_roll = 53
+set i_roll = 47
+set d_roll = 54
+set f_roll = 172
+set p_yaw = 53
+set i_yaw = 47
+set f_yaw = 172
+set d_max_roll = 0
+set d_max_pitch = 0
+set dyn_idle_min_rpm = 30
+set simplified_master_multiplier = 120
+set simplified_i_gain = 50
+set simplified_d_gain = 130
+set simplified_feedforward_gain = 120
+set simplified_dterm_filter = OFF
+
+profile 1
+
+# profile 1
+set profile_name = GEPRC
+set dterm_lpf1_dyn_min_hz = 63
+set dterm_lpf1_dyn_max_hz = 127
+set dterm_lpf1_dyn_expo = 3
+set dterm_lpf1_static_hz = 63
+set dterm_lpf2_static_hz = 127
+set dterm_notch_hz = 195
+set dterm_notch_cutoff = 180
+set i_pitch = 96
+set d_pitch = 55
+set i_roll = 92
+set d_roll = 47
+set i_yaw = 92
+set d_max_roll = 0
+set d_max_pitch = 0
+set motor_output_limit = 90
+set simplified_i_gain = 115
+set simplified_d_gain = 120
+set simplified_dterm_filter_multiplier = 85
+
+profile 2
+
+# profile 2
+set profile_name = GEPRCO3
+set i_pitch = 96
+set d_pitch = 55
+set i_roll = 92
+set d_roll = 47
+set i_yaw = 92
+set d_max_roll = 0
+set d_max_pitch = 0
+set motor_output_limit = 90
+set feedforward_smooth_factor = 60
+set simplified_i_gain = 115
+set simplified_d_gain = 120
+
+profile 3
+
+# profile 3
+set dterm_lpf1_dyn_min_hz = 78
+set dterm_lpf1_dyn_max_hz = 157
+set dterm_lpf2_static_hz = 157
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
+set p_pitch = 56
+set i_pitch = 50
+set d_pitch = 62
+set f_pitch = 179
+set p_roll = 53
+set i_roll = 47
+set d_roll = 54
+set f_roll = 172
+set p_yaw = 53
+set i_yaw = 47
+set f_yaw = 172
+set d_max_roll = 0
+set d_max_pitch = 0
+set dyn_idle_min_rpm = 30
+set simplified_master_multiplier = 120
+set simplified_i_gain = 50
+set simplified_d_gain = 130
+set simplified_feedforward_gain = 120
+set simplified_dterm_filter = OFF
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+# rateprofile 0
+set rateprofile_name = Calisto
+set roll_rc_rate = 32
+set pitch_rc_rate = 32
+set yaw_rc_rate = 32
+set roll_expo = 32
+set pitch_expo = 32
+set yaw_expo = 32
+set roll_srate = 68
+set pitch_srate = 68
+set yaw_srate = 68
+
+rateprofile 1
+
+# rateprofile 1
+set rateprofile_name = 1000_0.7
+set roll_rc_rate = 1
+set pitch_rc_rate = 1
+set yaw_rc_rate = 70
+set roll_expo = 70
+set pitch_expo = 70
+set yaw_expo = 50
+set roll_srate = 100
+set pitch_srate = 100
+set yaw_srate = 100
+
+rateprofile 2
+
+# rateprofile 2
+set rateprofile_name = 900_0.4
+set roll_rc_rate = 1
+set pitch_rc_rate = 1
+set yaw_rc_rate = 60
+set roll_expo = 40
+set pitch_expo = 40
+set yaw_expo = 40
+set roll_srate = 90
+set pitch_srate = 90
+set yaw_srate = 90
+
+rateprofile 3
+
+# rateprofile 3
+set rateprofile_name = 9000_0.6
+set roll_rc_rate = 1
+set pitch_rc_rate = 1
+set yaw_rc_rate = 60
+set roll_expo = 60
+set pitch_expo = 60
+set yaw_expo = 40
+set roll_srate = 90
+set pitch_srate = 90
+set yaw_srate = 90
+
+battery_profile 0
+
+# battery_profile 0
+set bat_capacity = 1500
+set vbat_max_cell_voltage = 435
+
+battery_profile 1
+
+battery_profile 2
+
+# restore original rateprofile selection
+rateprofile 3
+
+# restore original battery_profile selection
+battery_profile 0
+
+# save configuration
+save

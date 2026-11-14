@@ -1,0 +1,66 @@
+
+# version
+# Betaflight / STM32F405 (F405) 2026.6.2 Nov 10 2026 / 15:59:30 (e0b7bb01b) MSP API: 1.48
+# config rev: 3a406c5
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name SPEEDYBEEF405AIOV2
+manufacturer_id SPBE
+mcu_id 003600443235510d38343533
+signature 
+
+# name: 4"LongRange
+
+# feature
+feature GPS
+feature TELEMETRY
+feature OSD
+
+# serial
+serial UART3 131073 115200 57600 0 115200
+serial UART5 2 115200 115200 0 115200
+
+# master
+set acc_calibration = 19,-38,-33,1
+set yaw_motors_reversed = ON
+set craft_name = 4"LongRange
+set pilot_name = FPVSammy
+
+profile 0
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+battery_profile 0
+
+battery_profile 1
+
+battery_profile 2
+
+# restore original rateprofile selection
+rateprofile 0
+
+# restore original battery_profile selection
+battery_profile 0
+
+# save configuration
+save

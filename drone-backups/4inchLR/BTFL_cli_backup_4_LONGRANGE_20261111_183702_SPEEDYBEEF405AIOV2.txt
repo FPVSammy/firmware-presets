@@ -1,0 +1,174 @@
+
+# version
+# Betaflight / STM32F405 (F405) 2026.6.2 Nov 10 2026 / 15:59:30 (e0b7bb01b) MSP API: 1.48
+# config rev: 3a406c5
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name SPEEDYBEEF405AIOV2
+manufacturer_id SPBE
+mcu_id 003600443235510d38343533
+signature 
+
+# name: 4"LongRange
+
+# feature
+feature GPS
+feature TELEMETRY
+feature OSD
+
+# serial
+serial UART3 131073 115200 57600 0 115200
+serial UART5 2 115200 115200 0 115200
+
+# aux
+aux 0 0 0 900 1700 0 0
+aux 1 0 1 1300 2100 0 0
+aux 2 1 2 900 1700 0 0
+aux 3 3 3 900 1700 0 0
+aux 4 11 3 900 1300 0 0
+aux 5 46 2 900 1300 0 0
+aux 6 13 5 900 1700 0 0
+aux 7 35 5 900 1300 0 0
+
+# adjrange
+adjrange 0 0 4 900 2100 29 4 0 0
+adjrange 1 0 6 900 2100 12 6 0 0
+adjrange 2 0 7 900 2100 33 7 0 0
+
+# master
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set acc_calibration = 21,23,-30,1
+set dshot_bidir = ON
+set motor_poles = 12
+set failsafe_procedure = GPS-RESCUE
+set yaw_motors_reversed = ON
+set gps_sbas_mode = EGNOS
+set gps_ublox_use_galileo = ON
+set gps_set_home_point_once = ON
+set gps_rescue_initial_climb = 5
+set gps_rescue_allow_arming_without_fix = ON
+set deadband = 2
+set yaw_deadband = 2
+set osd_rssi_alarm = 0
+set osd_link_quality_alarm = 75
+set osd_rssi_dbm_alarm = -106
+set osd_cap_alarm = 0
+set osd_alt_alarm = 0
+set osd_rssi_pos = 12857
+set osd_link_quality_pos = 14870
+set osd_link_tx_power_pos = 14879
+set osd_rssi_dbm_pos = 14863
+set osd_rsnr_pos = 12851
+set osd_tim_1_pos = 563
+set osd_tim_2_pos = 14885
+set osd_flymode_pos = 14498
+set osd_throttle_pos = 15650
+set osd_motor_diag_pos = 9549
+set osd_gps_speed_pos = 15682
+set osd_gps_lon_pos = 14370
+set osd_gps_lat_pos = 14402
+set osd_gps_sats_pos = 14399
+set osd_home_dir_pos = 14426
+set osd_home_dist_pos = 14466
+set osd_flight_dist_pos = 14434
+set osd_compass_bar_pos = 14390
+set osd_altitude_pos = 14665
+set osd_warnings_pos = 14836
+set osd_avg_cell_voltage_pos = 14853
+set osd_nheading_pos = 14386
+set osd_nvario_pos = 14633
+set osd_core_temp_pos = 9453
+set osd_rate_profile_name_pos = 9517
+set osd_pid_profile_name_pos = 9485
+set osd_battery_profile_name_pos = 14530
+set osd_profile = 3
+set rate_6pos_switch = ON
+set craft_name = 4"LongRange
+set pilot_name = FPVSammy
+
+profile 0
+
+# profile 0
+set dyn_idle_min_rpm = 35
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+# rateprofile 0
+set rateprofile_name = LongRang
+set roll_rc_rate = 1
+set pitch_rc_rate = 1
+set yaw_rc_rate = 40
+set roll_expo = 70
+set pitch_expo = 70
+set yaw_expo = 50
+set roll_srate = 70
+set pitch_srate = 70
+set yaw_srate = 70
+
+rateprofile 1
+
+# rateprofile 1
+set rateprofile_name = Calisto
+set roll_rc_rate = 12
+set pitch_rc_rate = 12
+set yaw_rc_rate = 12
+set roll_expo = 32
+set pitch_expo = 32
+set yaw_expo = 32
+set roll_srate = 68
+set pitch_srate = 68
+set yaw_srate = 68
+
+rateprofile 2
+
+# rateprofile 2
+set rateprofile_name = 1000_0.7
+set roll_rc_rate = 1
+set pitch_rc_rate = 1
+set yaw_rc_rate = 70
+set roll_expo = 70
+set pitch_expo = 70
+set yaw_expo = 50
+set roll_srate = 100
+set pitch_srate = 100
+set yaw_srate = 100
+
+rateprofile 3
+
+battery_profile 0
+
+# battery_profile 0
+set battery_profile_name = LiIon
+set vbat_min_cell_voltage = 300
+set vbat_warning_cell_voltage = 320
+
+battery_profile 1
+
+# battery_profile 1
+set battery_profile_name = LiPo
+
+battery_profile 2
+
+# restore original rateprofile selection
+rateprofile 0
+
+# restore original battery_profile selection
+battery_profile 0
+
+# save configuration
+save

@@ -1,0 +1,154 @@
+
+# version
+# Betaflight / STM32G474 (G474) 2026.6.2 Sep 26 2026 / 17:53:10 (e0b7bb01b) MSP API: 1.48
+# config rev: 3a406c5
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name BETAFPVG473
+manufacturer_id BEFH
+mcu_id 001d00395346500220333446
+signature 
+
+# name: WalksnailToothpi
+
+# feature
+feature TELEMETRY
+feature OSD
+
+# serial
+serial UART2 0 115200 57600 0 115200
+serial UART4 131073 115200 57600 0 115200
+
+# aux
+aux 0 0 5 900 1300 0 0
+aux 1 1 3 1300 1700 0 0
+aux 2 2 3 900 1300 0 0
+aux 3 13 0 900 1300 0 0
+aux 4 35 2 900 1800 0 0
+
+# adjrange
+adjrange 0 0 4 900 2100 29 4 0 0
+adjrange 1 0 7 900 2100 12 7 0 0
+
+# master
+set gyro_lpf1_static_hz = 0
+set dyn_notch_count = 2
+set dyn_notch_q = 500
+set acc_calibration = -71,-5,11,1
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT300
+set motor_poles = 12
+set align_board_yaw = -90
+set yaw_motors_reversed = ON
+set osd_link_quality_alarm = 70
+set osd_rssi_dbm_alarm = -90
+set osd_cap_alarm = 0
+set osd_alt_alarm = 0
+set osd_rssi_pos = 8716
+set osd_link_quality_pos = 8720
+set osd_link_tx_power_pos = 8735
+set osd_rssi_dbm_pos = 8729
+set osd_tim_1_pos = 8707
+set osd_tim_2_pos = 12835
+set osd_flymode_pos = 8483
+set osd_motor_diag_pos = 8419
+set osd_warnings_pos = 14901
+set osd_avg_cell_voltage_pos = 12845
+set osd_core_temp_pos = 8451
+set osd_rate_profile_name_pos = 8547
+set osd_pid_profile_name_pos = 8515
+set osd_profile = 2
+set rpm_filter_min_hz = 80
+set craft_name = WalksnailToothpi
+set pilot_name = FPVSammy
+
+profile 0
+
+# profile 0
+set dterm_lpf2_type = BIQUAD
+set p_pitch = 48
+set i_pitch = 86
+set d_pitch = 22
+set f_pitch = 129
+set p_roll = 40
+set i_roll = 72
+set d_roll = 20
+set f_roll = 108
+set p_yaw = 40
+set i_yaw = 72
+set f_yaw = 108
+set d_max_roll = 21
+set d_max_pitch = 24
+set dyn_idle_min_rpm = 35
+set simplified_master_multiplier = 90
+set simplified_d_gain = 75
+set simplified_d_max_gain = 20
+set simplified_pitch_pi_gain = 115
+set tpa_rate = 75
+set tpa_breakpoint = 1250
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+# rateprofile 0
+set rateprofile_name = Cinemati
+set roll_rc_rate = 5
+set pitch_rc_rate = 5
+set yaw_rc_rate = 32
+set roll_expo = 32
+set pitch_expo = 32
+set yaw_expo = 32
+set roll_srate = 68
+set pitch_srate = 68
+set yaw_srate = 68
+
+rateprofile 1
+
+# rateprofile 1
+set rateprofile_name = Calisto
+set roll_rc_rate = 32
+set pitch_rc_rate = 32
+set yaw_rc_rate = 32
+set roll_expo = 32
+set pitch_expo = 32
+set yaw_expo = 32
+set roll_srate = 68
+set pitch_srate = 68
+set yaw_srate = 68
+
+rateprofile 2
+
+rateprofile 3
+
+battery_profile 0
+
+# battery_profile 0
+set battery_profile_name = LiPoHV
+set vbat_min_cell_voltage = 320
+set vbat_warning_cell_voltage = 330
+
+battery_profile 1
+
+battery_profile 2
+
+# restore original rateprofile selection
+rateprofile 0
+
+# restore original battery_profile selection
+battery_profile 0
+
+# save configuration
+save
