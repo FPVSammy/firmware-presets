@@ -170,7 +170,7 @@
   "presets": [
     {
       "fullPath": "presets/2026.6/osd/Analog_LR_OSD.txt",
-      "hash": "72be458b7358041271fda4c0369ca809e1d1de904c6fa098de15b3f3142b81f6",
+      "hash": "d85ac4d0cfde6b501940cc0e30b2896f9c6b509ab7a14fdec86f0fc404cd36b3",
       "title": "Long Range Analog OSD Layout",
       "firmware_version": [
         "2026.6"
