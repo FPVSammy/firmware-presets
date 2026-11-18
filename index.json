@@ -150,6 +150,7 @@
       "680_32",
       "880_32",
       "actual",
+      "analog",
       "battery profiles",
       "display",
       "freestyle",
@@ -161,11 +162,32 @@
       "long range",
       "osd",
       "rates",
+      "telemetry",
       "voltage alerts",
       "walksnail"
     ]
   },
   "presets": [
+    {
+      "fullPath": "presets/2026.6/osd/Analog_LR_OSD.txt",
+      "hash": "72be458b7358041271fda4c0369ca809e1d1de904c6fa098de15b3f3142b81f6",
+      "title": "Long Range Analog OSD Layout",
+      "firmware_version": [
+        "2026.6"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "osd",
+        "layout",
+        "analog",
+        "long range",
+        "gps",
+        "telemetry"
+      ],
+      "author": "FPVSammy",
+      "priority": 0
+    },
     {
       "fullPath": "presets/2026.6/osd/Walksnail_Freestyle_OSD.txt",
       "hash": "4047348375e0d69c9f7705a569c9c8f4b408ba60a48dc643e5f1be4b9bf15675",

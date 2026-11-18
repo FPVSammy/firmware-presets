@@ -1,0 +1,67 @@
+#$ TITLE: Long Range Analog OSD Layout
+#$ FIRMWARE_VERSION: 2026.6
+#$ CATEGORY: OSD
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: osd, layout, analog, long range, gps, telemetry
+#$ AUTHOR: FPVSammy
+#$ DESCRIPTION: Configures the complete analog OSD layout, warnings, alarms, and video system extracted from 7inch_analog_master.txt.
+
+# ==========================================
+# OSD & VIDEO SYSTEM CONFIGURATION
+# ==========================================
+feature OSD
+set vcd_video_system = PAL
+set osd_warn_bitmask = 323583
+set osd_rssi_alarm = 0
+set osd_link_quality_alarm = 75
+set osd_rssi_dbm_alarm = -106
+set osd_cap_alarm = 0
+set osd_alt_alarm = 0
+set osd_tim1 = 3
+set osd_tim2 = 1
+set osd_profile = 3
+set osd_gps_sats_show_pdop = ON
+
+# ==========================================
+# OSD ELEMENT POSITIONS (Layout)
+# ==========================================
+set osd_vbat_pos = 472
+set osd_link_quality_pos = 14703
+set osd_link_tx_power_pos = 14728
+set osd_rssi_dbm_pos = 14696
+set osd_rsnr_pos = 14712
+set osd_tim_1_pos = 14656
+set osd_tim_2_pos = 14688
+set osd_remaining_time_estimate_pos = 413
+set osd_flymode_pos = 14432
+set osd_throttle_pos = 14616
+set osd_vtx_channel_pos = 14735
+set osd_ah_pos = 218
+set osd_current_pos = 8278
+set osd_mah_drawn_pos = 86
+set osd_motor_diag_pos = 8407
+set osd_gps_speed_pos = 14584
+set osd_gps_lon_pos = 12736
+set osd_gps_lat_pos = 12753
+set osd_gps_sats_pos = 14409
+set osd_home_dir_pos = 14377
+set osd_home_dist_pos = 14400
+set osd_flight_dist_pos = 14368
+set osd_compass_bar_pos = 14378
+set osd_altitude_pos = 14592
+set osd_power_pos = 413
+set osd_warnings_pos = 14666
+set osd_avg_cell_voltage_pos = 14720
+set osd_nheading_pos = 14387
+set osd_nvario_pos = 14560
+set osd_core_temp_pos = 8311
+set osd_rate_profile_name_pos = 8342
+set osd_pid_profile_name_pos = 8374
+set osd_battery_profile_name_pos = 8320
+set osd_efficiency_pos = 118
+set osd_sys_vtx_voltage_pos = 206
+set osd_sys_bitrate_pos = 289
+set osd_sys_delay_pos = 299
+set osd_sys_goggle_dvr_pos = 310
+set osd_sys_vtx_temp_pos = 270
+set osd_stat_bitmask = 48643946
